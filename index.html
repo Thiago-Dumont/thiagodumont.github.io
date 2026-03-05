@@ -1,28 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
+
 <meta charset="UTF-8">
-<title>Thiago | Analista de Dados</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Thiago Dumont | Analista de Dados</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
 <style>
 
-body{
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
 font-family:'Poppins', sans-serif;
 background:#0f172a;
 color:white;
 }
 
+/* HEADER */
+
 .header{
-height:35vh;
+height:45vh;
 display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
 
-background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
+background-image:
+linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
 url("https://images.unsplash.com/photo-1518770660439-4636190af475");
 
 background-size:cover;
@@ -30,36 +43,71 @@ background-position:center;
 }
 
 .profile{
-width:160px;
-height:160px;
+width:150px;
+height:150px;
 border-radius:50%;
 border:4px solid white;
+margin-bottom:20px;
 }
 
 h1{
-font-size:48px;
-margin:20px 0 10px 0;
+font-size:40px;
+margin-bottom:10px;
 }
 
 .subtitle{
-font-size:20px;
-color:#94a3b8;
+color:#cbd5f5;
+font-size:18px;
+margin-bottom:20px;
 }
 
+/* BOTÕES */
+
+.button{
+display:inline-block;
+padding:12px 24px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:8px;
+margin:5px;
+font-weight:500;
+transition:0.3s;
+}
+
+.button:hover{
+background:#1d4ed8;
+transform:scale(1.05);
+}
+
+/* SEÇÕES */
+
 .section{
-padding:120px 10%;
 background:white;
 color:#111;
+padding:80px 10%;
 }
 
 .section h2{
 text-align:center;
 margin-bottom:40px;
+font-size:32px;
 }
+
+/* SOBRE */
+
+.about{
+max-width:800px;
+margin:auto;
+text-align:center;
+line-height:1.7;
+}
+
+/* PROJETOS */
 
 .projects{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
 gap:30px;
 }
 
@@ -67,41 +115,160 @@ gap:30px;
 background:#f1f5f9;
 padding:25px;
 border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.1);
+box-shadow:0 8px 20px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
 }
 
 .card h3{
-margin-top:0;
+margin-bottom:10px;
 }
 
-.card a{
-display:inline-block;
-margin-top:10px;
-color:#2563eb;
-text-decoration:none;
-font-weight:bold;
-}
-  .projetos{
-display:flex;
-justify-content:center;
-gap:30px;
-margin-top:40px;
-flex-wrap:wrap;
-}
-
-.card{
-background:white;
-padding:25px;
-border-radius:10px;
-box-shadow:0 10px 25px rgba(0,0,0,0.1);
-width:260px;
-}
+/* FOOTER */
 
 .footer{
-background:white;
-color:#111;
+background:#0f172a;
 text-align:center;
-padding:40px;
+padding:30px;
+font-size:14px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<div class="header">
+
+<img class="profile" src="IMG-20260305-WA0209.jpg">
+
+<h1>Thiago Dumont</h1>
+
+<p class="subtitle">
+Analista de Dados | Python | SQL | Power BI
+</p>
+
+<div>
+
+<a class="button" href="https://github.com/Thiago-Dumont" target="_blank">
+GitHub
+</a>
+
+<a class="button" href="#">
+LinkedIn
+</a>
+
+</div>
+
+</div>
+
+<!-- SOBRE -->
+
+<div class="section">
+
+<h2>Sobre Mim</h2>
+
+<div class="about">
+
+<p>
+Sou formado em Matemática e atualmente estou me especializando em
+Análise de Dados. Tenho interesse em transformar dados em informação
+útil para apoiar a tomada de decisões.
+</p>
+
+<br>
+
+<p>
+Trabalho com ferramentas como Python, SQL e Power BI para explorar
+dados, construir análises e criar visualizações que ajudam a entender
+padrões e tendências.
+</p>
+
+</div>
+
+</div>
+
+<!-- PROJETOS -->
+
+<div class="section">
+
+<h2>Projetos de Dados</h2>
+
+<div class="projects">
+
+<div class="card">
+
+<h3>Análise de Conversão de Clientes</h3>
+
+<p>
+Exploração de dados de marketing para identificar fatores
+que aumentam a conversão de clientes.
+</p>
+
+<br>
+
+<a class="button"
+href="https://github.com/Thiago-Dumont/Analise-Convers-o-de-Clientes"
+target="_blank">
+Ver Projeto
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>Consultas Analíticas em SQL</h3>
+
+<p>
+Consultas avançadas para análise de comportamento de clientes
+e geração de métricas de negócio.
+</p>
+
+<br>
+
+<a class="button" href="#">
+Ver Projeto
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>Dashboard de Vendas</h3>
+
+<p>
+Dashboard interativo criado no Power BI para análise
+de desempenho comercial.
+</p>
+
+<br>
+
+<a class="button" href="#">
+Ver Projeto
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<div class="footer">
+
+<p>© 2026 Thiago Dumont</p>
+
+</div>
+
+</body>
+</html>padding:40px;
 }
   .projetos{
 display:flex;
