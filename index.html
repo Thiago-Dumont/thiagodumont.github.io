@@ -6,146 +6,163 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Portfólio | Thiago Dumont</title>
+<title>Thiago Dumont | Data Science</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
 
-html{
-scroll-behavior:smooth;
-}
-
 body{
 margin:0;
 font-family:'Poppins',sans-serif;
-background:#f4f6f9;
-color:#333;
-}
-
-/* MENU */
-
-.nav{
-background:#0f172a;
 color:white;
-display:flex;
-justify-content:center;
-gap:40px;
-padding:15px;
-position:sticky;
-top:0;
-}
 
-.nav a{
-color:white;
-text-decoration:none;
-font-weight:500;
-}
-
-/* HEADER */
-
-.header{
-height:40vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-
-background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
-url("https://images.unsplash.com/photo-1518770660439-4636190af475");
-
+background-image:url("https://images.unsplash.com/photo-1451187580459-43490279c0fa");
 background-size:cover;
 background-position:center;
-
-color:white;
 }
+
+/* camada escura */
+
+.overlay{
+background:rgba(0,0,0,0.75);
+min-height:100vh;
+padding:40px;
+}
+
+/* painel central estilo vidro */
+
+.panel{
+
+max-width:900px;
+margin:auto;
+padding:40px;
+
+background:rgba(255,255,255,0.08);
+
+border-radius:25px;
+
+backdrop-filter:blur(15px);
+
+border:1px solid rgba(0,255,255,0.4);
+
+box-shadow:
+0 0 30px rgba(0,255,255,0.4),
+0 0 80px rgba(0,255,255,0.15);
+
+text-align:center;
+
+}
+
+/* foto */
 
 .profile{
 width:150px;
 height:150px;
 border-radius:50%;
-border:4px solid white;
+border:3px solid #00f5ff;
+box-shadow:0 0 20px #00f5ff;
 object-fit:cover;
 }
 
+/* título */
+
 h1{
-margin-top:15px;
+font-size:40px;
+margin:20px 0 10px;
 }
 
-/* SEÇÕES */
-
-.section{
-background:white;
-padding:60px;
-text-align:center;
+.subtitle{
+font-size:18px;
+opacity:0.8;
 }
 
-/* HABILIDADES */
+/* habilidades */
 
 .skills{
+
 display:flex;
 justify-content:center;
-gap:30px;
+gap:15px;
 flex-wrap:wrap;
 margin-top:30px;
+
 }
 
 .skill{
-background:#f1f5f9;
-padding:15px 25px;
-border-radius:8px;
-font-weight:500;
+
+padding:10px 20px;
+
+border-radius:10px;
+
+background:rgba(0,255,255,0.1);
+
+border:1px solid #00f5ff;
+
+box-shadow:0 0 10px rgba(0,255,255,0.6);
+
 }
 
-/* PROJETOS */
+/* projetos */
 
-.projetos{
+.cards{
+
 display:flex;
-justify-content:center;
-gap:30px;
-margin-top:40px;
+gap:25px;
 flex-wrap:wrap;
+justify-content:center;
+margin-top:40px;
+
 }
 
 .card{
-background:white;
-padding:25px;
-border-radius:10px;
-box-shadow:0 10px 25px rgba(0,0,0,0.1);
-width:260px;
+
+width:240px;
+padding:20px;
+
+background:rgba(255,255,255,0.08);
+
+border-radius:15px;
+
+border:1px solid rgba(0,255,255,0.3);
+
+backdrop-filter:blur(10px);
+
+box-shadow:0 0 15px rgba(0,255,255,0.3);
+
 }
 
 .button{
-background:#2563eb;
-color:white;
-padding:10px 20px;
-border-radius:8px;
-text-decoration:none;
+
 display:inline-block;
 margin-top:10px;
+
+padding:8px 18px;
+
+background:#00f5ff;
+
+color:black;
+
+border-radius:8px;
+
+text-decoration:none;
+
+font-weight:600;
+
 }
 
 .button:hover{
-background:#1d4ed8;
+
+box-shadow:0 0 20px #00f5ff;
+
 }
 
-/* CONTATO */
-
-.contato a{
-display:block;
-margin-top:10px;
-color:#2563eb;
-text-decoration:none;
-}
-
-/* FOOTER */
+/* rodapé */
 
 .footer{
-background:#0f172a;
-color:white;
 text-align:center;
-padding:30px;
+margin-top:40px;
+opacity:0.6;
 }
 
 </style>
@@ -154,87 +171,61 @@ padding:30px;
 
 <body>
 
-<div class="nav">
+<div class="overlay">
 
-<a href="#sobre">Sobre</a>
-<a href="#skills">Habilidades</a>
-<a href="#projetos">Projetos</a>
-<a href="#contato">Contato</a>
+<div class="panel">
 
-</div>
-
-<div class="header">
-
-<img class="profile" src="sua_foto.jpg">
+<img class="profile" src="IMG-20260305-WA0209.jpg">
 
 <h1>Thiago Dumont</h1>
-<p>Cientista de Dados</p>
 
-</div>
+<p class="subtitle">Cientista de Dados</p>
 
-<div id="sobre" class="section">
-
-<h2>Sobre mim</h2>
-
-<p>
-Sou formado em Matemática e estou em transição para a área de Ciência de Dados.
-Tenho interesse em análise de dados, estatística e aprendizado de máquina.
-</p>
-
-</div>
-
-<div id="skills" class="section">
-
-<h2>Habilidades</h2>
+<h2>Skills</h2>
 
 <div class="skills">
 
 <div class="skill">Python</div>
 <div class="skill">SQL</div>
 <div class="skill">Power BI</div>
+<div class="skill">Machine Learning</div>
 <div class="skill">Estatística</div>
-<div class="skill">Pandas</div>
 
 </div>
-
-</div>
-
-<div id="projetos" class="section">
 
 <h2>Projetos</h2>
 
-<div class="projetos">
+<div class="cards">
 
 <div class="card">
+
 <h3>Análise de Clientes</h3>
-<p>Análise exploratória com Python e Pandas.</p>
-<a class="button" href="https://github.com/" target="_blank">Ver projeto</a>
+
+<p>Exploração de dados com Python.</p>
+
+<a class="button" href="#">Ver projeto</a>
+
 </div>
 
 <div class="card">
-<h3>Consultas SQL</h3>
+
+<h3>SQL Analytics</h3>
+
 <p>Consultas analíticas em banco de dados.</p>
-<a class="button" href="https://github.com/" target="_blank">Ver projeto</a>
+
+<a class="button" href="#">Ver projeto</a>
+
 </div>
 
 <div class="card">
+
 <h3>Dashboard Power BI</h3>
-<p>Dashboard interativo de vendas.</p>
-<a class="button" href="https://github.com/" target="_blank">Ver projeto</a>
-</div>
+
+<p>Visualização interativa de dados.</p>
+
+<a class="button" href="#">Ver projeto</a>
 
 </div>
-
-</div>
-
-<div id="contato" class="section">
-
-<h2>Contato</h2>
-
-<div class="contato">
-
-<a href="https://github.com/" target="_blank">GitHub</a>
-<a href="https://linkedin.com/" target="_blank">LinkedIn</a>
 
 </div>
 
@@ -246,5 +237,8 @@ Tenho interesse em análise de dados, estatística e aprendizado de máquina.
 
 </div>
 
+</div>
+
 </body>
+
 </html>
