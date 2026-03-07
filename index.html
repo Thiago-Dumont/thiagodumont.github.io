@@ -224,6 +224,21 @@ Ver projeto
 </div>
 
 </div>
+ <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+<div id="grafico" style="max-width:700px;margin:auto;"></div>
+
+<script>
+
+var dados = [{
+x: ["Jan","Fev","Mar","Abr","Mai"],
+y: [10,15,13,17,22],
+type: "scatter"
+}];
+
+Plotly.newPlot("grafico", dados);
+
+</script>
 
 </body>
 
