@@ -2,54 +2,20 @@
 <html lang="pt-BR">
 
 <head>
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "Person",
- "name": "Thiago Dumont",
- "url": "https://thiago-dumont.github.io/",
- "image": "https://thiago-dumont.github.io/IMG-20260305-WA0209.jpg",
- "jobTitle": "Data Scientist",
- "sameAs": [
-   "https://github.com/Thiago-Dumont",
-   "https://www.linkedin.com/"
- ],
- "knowsAbout": [
-   "Python",
-   "SQL",
-   "Machine Learning",
-   "Power BI",
-   "Data Analysis",
-   "Statistics"
- ]
-}
-</script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Thiago Dumont | Data Scientist</title>
+<title>Thiago Dumont | Data Analyst</title>
 
-<meta name="description" content="Portfólio de projetos em Ciência de Dados com Python, SQL e Power BI para geração de insights e tomada de decisão baseada em dados.">
+<meta name="description"
+content="Portfólio de projetos em Data Analytics com Python, SQL e Power BI focado em análise exploratória e geração de insights de negócio.">
 
-<link rel="canonical" href="https://thiago-dumont.github.io/">
-
-<!-- Open Graph -->
-
-<meta property="og:title" content="Thiago Dumont | Data Scientist">
-<meta property="og:description" content="Portfólio de projetos em Ciência de Dados com Python, SQL e Power BI.">
-<meta property="og:image" content="https://thiago-dumont.github.io/preview-linkedin.png">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta property="og:url" content="https://thiago-dumont.github.io/">
+<meta property="og:title" content="Thiago Dumont | Data Analyst">
+<meta property="og:description" content="Portfólio de projetos em Data Analytics com Python, SQL e Power BI.">
+<meta property="og:image" content="https://thiago-dumont.github.io/preview.png">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Thiago Dumont Portfolio">
-
-<!-- Twitter -->
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Thiago Dumont | Data Scientist">
-<meta name="twitter:description" content="Portfólio de projetos em Ciência de Dados com Python, SQL e Power BI.">
-<meta name="twitter:image" content="https://thiago-dumont.github.io/preview.png">
+<meta property="og:url" content="https://thiago-dumont.github.io/">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
@@ -58,29 +24,14 @@
 body{
 margin:0;
 font-family:'Poppins',sans-serif;
+background:#0d1117;
 color:white;
-background-image:url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1600&q=80");
-background-size:cover;
-background-position:center;
 }
 
-.overlay{
-background:rgba(0,0,0,0.75);
-min-height:100vh;
-padding:40px;
-}
-
-.panel{
-max-width:900px;
+.container{
+max-width:1100px;
 margin:auto;
-padding:40px;
-background:rgba(255,255,255,0.08);
-border-radius:25px;
-backdrop-filter:blur(15px);
-border:1px solid rgba(0,255,255,0.4);
-box-shadow:
-0 0 30px rgba(0,255,255,0.4),
-0 0 80px rgba(0,255,255,0.15);
+padding:40px 20px;
 text-align:center;
 }
 
@@ -89,69 +40,83 @@ width:150px;
 height:150px;
 border-radius:50%;
 border:3px solid #00f5ff;
-box-shadow:0 0 20px #00f5ff;
 object-fit:cover;
+box-shadow:0 0 20px #00f5ff;
 }
 
 h1{
-margin:20px 0 10px;
+margin-top:20px;
+font-weight:600;
 }
 
 .subtitle{
-opacity:0.9;
 max-width:650px;
 margin:auto;
+opacity:0.8;
+}
+
+.links{
+margin-top:15px;
+}
+
+.links a{
+color:#00f5ff;
+text-decoration:none;
+margin:0 10px;
+font-weight:500;
 }
 
 .skills{
 display:flex;
 justify-content:center;
-gap:15px;
 flex-wrap:wrap;
+gap:10px;
 margin-top:30px;
 }
 
 .skill{
-padding:10px 20px;
-border-radius:10px;
-background:rgba(0,255,255,0.1);
 border:1px solid #00f5ff;
+padding:8px 16px;
+border-radius:8px;
 }
 
 .cards{
 display:flex;
-gap:25px;
 flex-wrap:wrap;
+gap:25px;
 justify-content:center;
 margin-top:40px;
 }
 
 .card{
-width:240px;
-padding:20px;
-background:rgba(255,255,255,0.08);
+background:#161b22;
+padding:25px;
 border-radius:15px;
-border:1px solid rgba(0,255,255,0.3);
+width:320px;
+text-align:left;
+}
+
+.card h3{
+margin-top:0;
 }
 
 .button{
 display:inline-block;
-margin-top:10px;
-padding:8px 18px;
+margin-top:15px;
+padding:8px 16px;
 background:#00f5ff;
 color:black;
-border-radius:8px;
+border-radius:6px;
 text-decoration:none;
 font-weight:600;
 }
 
-.button:hover{
-box-shadow:0 0 20px #00f5ff;
+#grafico{
+margin-top:20px;
 }
 
-.footer{
-text-align:center;
-margin-top:40px;
+footer{
+margin-top:50px;
 opacity:0.6;
 }
 
@@ -161,23 +126,25 @@ opacity:0.6;
 
 <body>
 
-<div class="overlay">
+<div class="container">
 
-<div class="panel">
-
-<img class="profile"
-src="IMG-20260305-WA0209.jpg"
-alt="Thiago Dumont">
+<img class="profile" src="IMG-20260305-WA0209.jpg">
 
 <h1>Thiago Dumont</h1>
 
 <p class="subtitle">
-
-Portfólio de projetos em Ciência de Dados com análises exploratórias,
-visualização de dados e aplicações práticas utilizando Python, SQL e
-Power BI para geração de insights e tomada de decisão baseada em dados.
-
+Profissional em transição para Data Analytics com foco em análise exploratória,
+visualização de dados e geração de insights estratégicos utilizando Python,
+SQL e Power BI.
 </p>
+
+<div class="links">
+
+<a href="https://github.com/Thiago-Dumont" target="_blank">GitHub</a>
+
+<a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+
+</div>
 
 <h2>Habilidades</h2>
 
@@ -188,6 +155,7 @@ Power BI para geração de insights e tomada de decisão baseada em dados.
 <div class="skill">Power BI</div>
 <div class="skill">Machine Learning</div>
 <div class="skill">Estatística</div>
+<div class="skill">Data Visualization</div>
 
 </div>
 
@@ -197,17 +165,32 @@ Power BI para geração de insights e tomada de decisão baseada em dados.
 
 <div class="card">
 
-<h3>Análise de Conversão de Clientes</h3>
+<h3>Análise de Conversão de Marketing</h3>
 
 <p>
-Exploração de dados de marketing para identificar fatores que aumentam a conversão de clientes.
+Projeto de análise exploratória para identificar quais canais de marketing
+geram maior taxa de conversão de clientes. O objetivo é otimizar o investimento
+em campanhas digitais.
+</p>
+
+<div id="grafico"></div>
+
+</div>
+
+<div class="card">
+
+<h3>Projeto de Análise de Dados</h3>
+
+<p>
+Exploração de dados utilizando Python e bibliotecas de análise para identificar
+padrões de comportamento e gerar insights estratégicos para tomada de decisão.
 </p>
 
 <a class="button"
 href="https://github.com/Thiago-Dumont"
 target="_blank">
 
-Ver projeto
+Ver no GitHub
 
 </a>
 
@@ -215,28 +198,39 @@ Ver projeto
 
 </div>
 
-</div>
-
-<div class="footer">
+<footer>
 
 <p>© 2026 | Thiago Dumont</p>
 
-</div>
+</footer>
 
 </div>
- <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
-<div id="grafico" style="max-width:700px;margin:auto;"></div>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
 <script>
 
-var dados = [{
-x: ["Jan","Fev","Mar","Abr","Mai"],
-y: [10,15,13,17,22],
-type: "scatter"
+var dados=[{
+
+x:["Google Ads","Instagram","Email","Orgânico"],
+
+y:[3.2,2.1,5.4,4.0],
+
+type:"bar"
+
 }];
 
-Plotly.newPlot("grafico", dados);
+var layout={
+
+title:"Taxa de Conversão por Canal (%)",
+
+xaxis:{title:"Canal de Aquisição"},
+
+yaxis:{title:"Conversão (%)"}
+
+};
+
+Plotly.newPlot("grafico",dados,layout);
 
 </script>
 
